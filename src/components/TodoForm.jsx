@@ -16,7 +16,7 @@ export const TodoForm = ({ addTodo }) => {
             <input
                 type="text"
                 value={value}
-                placeholder='What is the task today?'
+                placeholder='Add a new task...'
                 className="bg-transparent border font-medium rounded-lg text-xl px-5 py-2.5 text-center text-white mr-1"
                 onChange={(e) => setValue(e.target.value)}
             />
