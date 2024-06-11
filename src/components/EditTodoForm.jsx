@@ -11,7 +11,7 @@ export const EditTodoForm = ({ editTodo, task }) => {
     };
 
     return (
-        <form className='flex justify-center items-center m-10' onSubmit={handleSubmit}>
+        <div className='flex justify-center items-center m-10'>
             <input
                 type="text"
                 value={value}
@@ -22,9 +22,10 @@ export const EditTodoForm = ({ editTodo, task }) => {
             <button
                 type="submit"
                 className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center"
+                onClick={handleSubmit}
             >
                 Update Task
             </button>
-        </form>
+        </div>
     );
 };
